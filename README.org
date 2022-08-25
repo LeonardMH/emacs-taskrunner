@@ -1,4 +1,39 @@
 * Emacs Taskrunner
+
+This repository is forked from the original [[https://github.com/emacs-taskrunner/emacs-taskrunner][emacs-taskrunner]] which is no longer
+maintained. My primary goals for this fork are to re-work and extend support for
+the following build systems (which I or my team use):
+
+- doit
+- Make/Cmake
+- Ninja
+- cargo
+- tasks.json (VS Code)
+
+Additionally, I plan to add support for more bare-bones completion engines such
+as =completing-read= (built in to Emacs) and =vertico= (the completion engine of
+the future).
+
+While I may hope to eventually get to some of the improvement the original
+author planned, my primary goal is improving support for more modern build
+systems and completion engines, as well as performance improvements (as
+necessary). This may necessitate deprecating support for some build systems as I
+work through refactoring or deem them not worth supporting.
+
+Misc planned goals (not outlined above):
+
+- Remove support for synchronous operation, why would anyone choose synchronous
+  over async?
+- Maintain support for ivy and helm, they are still widely used and good in
+  their own way. Vertico is they one true way, but not everyone has seen the
+  light.
+- Add more ripgrep, ripgrep is love, ripgrep is life.
+
+Everything below this point is from the original project's README, which I will
+update as time goes on.
+
+-----
+
 This is an elisp library which aims to provide a way to retrieve all of the
 tasks/targets from various build systems and execute them in a compilation buffer.
 
@@ -84,6 +119,7 @@ It can be used for the following systems/frontends listed below.
 * API
 The API for taskrunner is slowly being documented [[file:api-doc.org][here]]. It is not yet complete
 but the majority of the basics are there.
+
 * Design Choices
 ** Async vs Sync
 This library comes with both sync and async functions. Originally, everything

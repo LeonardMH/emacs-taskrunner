@@ -1,3 +1,10 @@
+**NOTE**: All of the documentation below is a product of the original repository
+and is not necessarily reflective of the current state of the project or its
+intended goals, I will attempt to ensure documentation is update appropriately
+as changes are made.
+
+-----
+
 * Taskrunner API documentation
 ** On caches and speed
 ~Taskrunner~ is a library made to retrieve and run tasks from several build

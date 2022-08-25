@@ -1,8 +1,0 @@
-* Emacs-Taskrunner Todo
-- [X] Add support for caching using project root
-- [X] Add support for updating the cache
-- [X] Rework grunt tasks so they are retrieved synchronously for now(async later!)
-- [X] Add option to open build/task/target files(makefile, package.json, gruntfile...)
-- [ ] Add a minor mode which gathers targets on projectile-project-switch
-- [ ] Create a set of functions which use threads
-- [ ] Add support for multiple build caches
